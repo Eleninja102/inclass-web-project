@@ -2,51 +2,33 @@
 @import url("bootstrap/dist/css/bootstrap.min.css");
 @import url("bootstrap-icons/font/bootstrap-icons.css");
 
-body{
-    margin: 0 auto 1rem;
-    width: 80%;
-    text-align: center;
-}
-.gallery{
-    display: flex;
-    border: 1px solid lightgray;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    flex-flow: column nowrap;
+div.video{
+    background-color: #eee;
+    border: 2px solid gray;
+    padding: 1rem;
+    
+    width: 60%;
+    margin: 1rem auto;
 }
 
-.gallery > .top{
-    display: flex;
-    flex-flow: row nowrap;
-}
-.image{
-    margin: 5px;
-    overflow: hidden;
-
-}
-img{
+video{
     width: 100%;
     height: 100%;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    object-fit: cover;
 }
-
-div{
+iframe{
     flex: 1;
 }
-.gallery > .top > .left, .gallery > .top > .middle, .gallery > .top > .right{
+.flex{
     display: flex;
-    flex-flow: column nowrap;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
 }
 
-.gallery > .top > .right > .top, .gallery > .top > .right > .bottom{
-    display: flex;
-    flex-flow: row nowrap;
-}
+.field>input{
+    border: 1px solid skyblue;
+    border-radius: 8px;
+    width: 100%;
 
-
-.gallery > .bottom{
-    display: flex;
-    flex-flow: row nowrap;
 }
