@@ -2,25 +2,117 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Project Starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index,follow" />
     <meta name="description" content="TODO: A starter project for ..." />
-
     <link rel="stylesheet" href="./stylesheets/main.css" />
+
+    <title>Document</title>
+
   </head>
 
   <body>
-    <!-- Your HTML goes here -->
-    <h1 class="display-2 text-center my-5 py-5">
-      <span class="d-block py-5">
-        <i class="bi bi-filetype-html text-primary"></i>
-        <i class="bi bi-filetype-css text-danger"></i>
-        <i class="bi bi-filetype-js text-success"></i>
-      </span>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Coleton Watt</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-      Welcome to CS 2350!
-    </h1>
+    <div class="hero container-fluid p-5">
+      <h1 class="display-1">
+        Custom Jumbotron Header
+      </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eius minus velit, a sunt excepturi aspernatur nulla ex? Rerum doloribus itaque fugit beatae accusantium quas at nam unde mollitia amet?</p>
+      <button type="button" class="btn btn-primary btn-lg">Click here for more</button>
+    </div>
+    <div class="container">
+      <h1>Guest Book</h1>
+      <form id="guest-form" method="post">
+        <div class="mb-3">
+          <label for="fn" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="fn">
+        </div>
+        <div class="mb-3">
+          <label for="ln" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="ln">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <h1>Registered Guests</h1>  
+        <table class="table" id="guests">
+          <thead>
+            <tr>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            
+          </tbody>
+
+        </table>
+
+      </form>
+    </div>
+    <div class="container clearfix">
+      <img class="img-fluid float-end w-50 m-2" src="https://images.unsplash.com/photo-1698299690518-4cb8066979f5?auto=format&fit=crop&q=80&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      <h1>How It works</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti praesentium rerum illo porro! Sapiente nihil laudantium eos exercitationem dolores maxime a corrupti adipisci! Eaque culpa quia facere delectus sapiente hic.
+      Quidem saepe consequatur molestiae animi earum impedit delectus rerum eligendi vitae ullam quis laboriosam accusantium quam sit dolor hic ut magni, ipsum aliquid eveniet ab similique. Illo laborum facilis accusantium!
+      Delectus, in! Accusantium perferendis culpa laboriosam, sapiente nostrum nulla architecto tempore aliquid voluptates laborum nobis? Praesentium, voluptas dolorum veniam explicabo, neque nulla vel corporis ipsum magni inventore facilis, fugit nisi!
+      Iusto rerum enim quod quaerat pariatur tempora repudiandae eius, voluptates a nam itaque in facere ex incidunt vitae ratione excepturi impedit tenetur officia maxime! Quisquam voluptatum quo vel facere exercitationem.
+      Distinctio consectetur voluptatem numquam officiis saepe voluptate eum. Aspernatur voluptatibus aliquam ea ut architecto, ipsum temporibus ducimus harum nisi eos, saepe enim debitis obcaecati dignissimos? Blanditiis ratione excepturi atque? Nobis!</p>
+     
+    </div>
+
+    
+    <footer class="container-fluid bg-dark text-light p-5 mt-5">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2>Coleton Watt's Site</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis quibusdam porro fuga, culpa rem iure aspernatur aperiam, consequuntur ex ducimus ea eveniet maxime nisi quisquam, minima aliquid amet labore!
+          Deserunt doloribus ratione repudiandae dicta. Necessitatibus molestias ullam suscipit inventore adipisci vero soluta ipsum? Distinctio, perferendis dolor temporibus nisi, laudantium, eos vitae quia sint reprehenderit consectetur excepturi eius soluta? Facilis.</p>
+        </div>
+        <div class="d-none d-md-block col-6 col-lg-3">
+          <h2>Other Pages</h2>
+          <nav class="nav flex-column">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </nav>
+        </div>
+        <div class="d-none d-md-block col-6 col-lg-3">
+          <h2>Contact Us</h2>
+          <nav class="nav flex-column">
+            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-facebook"></i> Facebook</a>
+            <a class="nav-link" href="#"><i class="bi bi-twitter-x"></i> Twitter/X</a>
+            <a class="nav-link" href="#"><i class="bi bi-instagram"></i> Instagram</a>
+          </nav>
+        </div>
+      </div>
+      <div class="text-center">
+        &copy; All Rights Reserved
+      </div>
+    </footer>
 
     <script type="module" src="./javascripts/main.js"></script>
   </body>
