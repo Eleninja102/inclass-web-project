@@ -19,7 +19,9 @@ export function addGuest(e){
         tr.innerHTML = guest_html
 
         document.querySelector("#guests tbody").appendChild(tr);
+    }else{
+        alert("Either first name or last name is blank")
     }
-
+ 
     this.reset();
 }
