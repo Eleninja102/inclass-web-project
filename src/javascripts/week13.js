@@ -35,7 +35,7 @@ export function getTop10Movies(){
             let grid = document.querySelector('.movies')
             grid.appendChild(col)
         }
-        
+	
     }).catch(function(err){
         console.log(err);
         document.querySelector('.movies').innerHTML = `<p>Failed to download the requested data</p>`
